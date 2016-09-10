@@ -1,0 +1,266 @@
+/*Credit: most of these things came from r/sto, r/playdate and r/swtor*/
+/*SETTINGS*/
+div.titlebox span.word { display: none }
+.subscribers:after { content: "Utopia Planitia Technicians" }
+.users-online:after { content: " Shipwrights At Work (last 15 minutes)" }
+
+a {
+    color: #006699
+    }
+
+#header {
+    border-bottom: 1px solid #6b2e16;
+    background-color: #000;
+    background-image: url(%%header3%%);
+    background-position: center;
+    height: 185px;
+    background-repeat: no-repeat
+    }
+/*CONTENT*/
+.content {
+    margin: 20px 5px 0px 5px
+    }
+#sr-more-link {
+    display: none
+    }
+div.content {
+    margin-right: 30px;
+    padding-left: 10px
+    }
+/*SUBREDDIT BAR*/
+.sr-bar a, .dropdown.srdrop .selected {
+    color: black;
+    text-shadow: white 0px 1px 0px
+    }
+.sr-bar a:hover {
+    color: #6b2e16;
+    text-decoration: underline
+    }
+#header-bottom-left {
+    font-size: larger;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 120px;
+    position: relative
+    }
+#header .pagename, #header .redditname {
+    display: block;
+    background: url(%%stobuilds%%) 0px -13px no-repeat;
+    width: 290px;
+    height: 160px;
+    position: relative;
+    margin: 0 auto;
+    top: -32px;
+    z-index: 90
+    }
+#header .pagename:hover, #header .redditname:hover {
+    background-position: 0px -203px
+    }
+#header .pagename a, #header .redditname a {
+    display: block;
+    text-indent: -9999px;
+    width: 363px;
+    height: 125px
+    }
+.pagename {
+    text-indent: -9999px
+    }
+/*new
+.menuarea {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: -100px
+    }
+.spacer ul li form a {
+    color: #6b2e16
+    }*/
+/*RES/GOLD FIXES*/
+.keyHighlight {
+    outline: 1px dashed #BBB !important;
+    background-color: #F8F8F8 !important
+    }
+.link.last-clicked {
+    border: none
+    }
+/*NAVMENU (parts from r/baconreader)*/
+ul.tabmenu {
+    background-image: url(%%blank%%);
+    border: 1px solid #aaa;
+    position: absolute;
+    font-size: 12px;
+    top: 130px;
+    left: 50px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    z-index: 9999
+    }
+ul.tabmenu li {
+    padding: 4px 0px;
+    display: block;
+    float: left;
+    z-index: 9999
+    }
+ul.tabmenu:after {
+    clear: both
+    }
+ul.tabmenu li a, ul.tabmenu li.selected a {
+    background-color: transparent;
+    border: 0;
+    color: #777;
+    text-shadow: 0 1px 0 #fff;
+    font-weight: normal
+    }
+ul.tabmenu li.selected a {
+    color: #6b2e16;
+    font-weight: bold
+    }
+ul.tabmenu.formtab {
+    display: block;
+    padding-left: 10px;
+    font-size: larger;
+    top: 150px;
+    z-index: 9999
+    }
+.expando form .usertext-body .md {
+    border: 1px solid #6b2e16
+    }
+.linkinfo {
+    border: 1px solid #6b2e16;
+    background-color: #FAFAFA
+    }
+/*USER BAR*/
+#header-bottom-right {
+    border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    background-color: transparent;
+    z-index: 99;
+    right: 6px;
+    bottom: 10px
+    }
+#header-bottom-right a, #header-bottom-right .user {
+    color: #EEE;
+    text-shadow: #222 0px 1px 0px
+    }
+/* This is important to allow oversized updown arrows all over! */
+/* OVERRIDES INLINE CSS */
+.midcol[style] {
+    width: 33px !important
+    }
+.comment .midcol {
+    width: 33px
+    }
+.gadget .midcol {
+    width: 33px;
+    margin: 0
+    }
+/* Custom up and down arrows */
+.arrow.downmod {
+    background: url(%%up%%) top center no-repeat;
+    width: 20px;
+    height: 20px
+    }
+.arrow.down {
+    background: url(%%grey%%) top center no-repeat;
+    width: 20px;
+    height: 20px
+    }
+.arrow.upmod {
+    background: url(%%purple%%) top center no-repeat;
+    width: 20px;
+    height: 20px
+    }
+.arrow.up {
+    background: url(%%grey2%%) top center no-repeat;
+    width: 20px;
+    height: 20px
+    }
+.link .score.dislikes {
+    color: #3da5bf
+    }
+.link .score.likes {
+    color: #FF6600
+    }
+/* Announcment: http://redd.it/mw2ip */
+/*This lowers the links to create space*/
+div.content {
+    margin-top: 50px
+    }
+/*Hack to enable repositioning of child elements*/
+.titlebox form {
+    position: static
+    }
+/*this code positions the sticky*/
+.side h3:nth-of-type(1) {
+    position: absolute;
+    display: block;
+    top: 185px;
+    left: 40px;
+    right: 320px;
+    /*this code styles the sticky*/
+    background-color: #f6e69f;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
+    margin: 15px;
+    border-radius: 1px;
+    border: 1px solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 7px 20px 7px 20px;
+    /*this code creates the image*/
+    background-image: url(%%blank2%%);
+    background-repeat: no-repeat;
+    background-position: left
+    }
+.arrow.down { visibility: hidden; display: none }
+
+/* Fancy Tables */
+.md table {
+        width: 90%;
+	border: 2px solid #52A3CC;
+	background-color: white;
+	box-shadow: 0 0 2px #ccc;
+	font-size: 10px !important;
+	text-align: center;
+}
+.md th, .md td {
+	padding: 3px 1ex;
+	vertical-align: top;
+}
+.md th {
+	color: black;
+	background-color: #CAEDFF;
+}
+.md td {
+	color: black;
+	background-color: white;
+}
+
+/*Wiki Button Graphic*/
+.side a[href="http://www.reddit.com/r/stobuilds/wiki/index"]:after {
+width: 258px;
+height: 92px;
+content: "";
+background-image: url(%%wikibuttonsmaller%%);
+display: inline-block;
+position:relative;
+}
+/* Used in part from http://www.reddit.com/r/noahjk/faq */
+/* Edits flair options --added by admiraljustin */
+.flair {
+        min-width: 24px;
+        height: 24px;
+        line-height: 24px;
+        margin-right: 0px;
+        width: auto !important;
+        color: #555;
+        vertical-align: middle;
+        border: 0px solid #fff;
+        }
+ 
+.flair:hover{ color: #000;}
+/* Icons by @DamonTCS */
+.flair-Dev { color: #f00; }
+.flair-Dev:before{content: url(%%flairdev2%%) " "; }
+.flair-Dev:after{color: black; background: #EEE; border: #CEDECE 1px solid; content:" PWE or Cryptic Staff ";}
